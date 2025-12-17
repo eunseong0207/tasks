@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
-class ToDoEntityClass extends StatelessWidget {
-  ToDoEntityClass(this.description, this.isDone, this.isFavorite, this.title);
+class ToDoEntity extends StatelessWidget {
+  ToDoEntity({
+    required this.title,
+    required this.description,
+    required this.isFavorite,
+    required this.isDone,
+  }); // 네임드 파라미터를 사용하는게 좋음
 
   final String title;
   final String? description;
