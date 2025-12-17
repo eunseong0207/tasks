@@ -13,4 +13,8 @@
 - 초기 화면의 이름은 `HomePage`로 합니다
 - To Do의 상세 내역 화면의 이름은 `ToDoDetailPage`로 한다.
 
-    
+ ## To Do Entity Class 만들기
+- final String title;
+- final String? description;
+- final bool isFavorite;
+- final bool isDone;
