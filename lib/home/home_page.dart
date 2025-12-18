@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
       ),
-      // -----빨간배경 + 버튼 시작 -----
+      // ----- 빨간배경 + 버튼 시작 -----
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: Colors.red,
