@@ -25,12 +25,22 @@
  ## 레이아웃  나누기
 
  ### AppBar
- - [x] Text
+  - [x] Text
  ### Body
- - [x] ListView
-   - [x] Container
+  - [x] ListView
+    - [x] Container
        - [x] Column
-             - [x] Image
-             - [x] Text
-             - [x] Text
-        - [ ] floatingActionButton 
+              - [x] Image
+              - [x] Text
+              - [x] Text
+       - [x] floatingActionButton 
+
+### BottomSheet
+  - [x] Container
+    - [x] Column
+      - [x] TextField
+      - [x] Row
+      - [x] Icon
+      - [x] Icon
+      - [x] Text
+

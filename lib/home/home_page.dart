@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tasks/to_do/to_do_empty.dart';
+import 'package:tasks/to_do/to_do_keyboard_other.dart';
 
 class HomePage extends StatelessWidget {
   String name = "은성`s Tasks";
@@ -16,19 +17,24 @@ class HomePage extends StatelessWidget {
       ),
       // ----- 빨간배경 + 버튼 시작 -----
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          showModalBottomSheet(
+            context: context,
+            builder: (context) {
+              return Keyboard();
+            },
+          );
+        },
         backgroundColor: Colors.red,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadiusGeometry.circular(100),
         ),
         child: Icon(Icons.add, color: Colors.white),
       ),
-      // ----- 빨간배경 + 버튼 시작 -----
-      body: ListView(
-        children: [
-          // Empty(name: name)
-        ],
-      ),
+      // ----- 빨간배경 + 버튼 종료 -----
+      body: ListView(children: [Empty(name: name)]),
+      resizeToAvoidBottomInset: false,
+      // FloatingActionButton 위치 변하지 않게 사용함
     );
   }
 
